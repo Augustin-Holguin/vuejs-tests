@@ -20,7 +20,7 @@
         </div>
         <button class="btn btn-primary" @click="addNote">Add note</button>
       </div>
-      <div class="col-sm-12">
+      <div class="col-sm-8">
         <div class="col-sm-4 note" v-for="(note, index) in notes">
           <div class="card">
             <button class="close" @click="removeNote(index)">&times;</button>
@@ -45,8 +45,8 @@
       },
       notes: [
         {
-          title: 'Visited Colombias',
-          text: 'I love the chicas there and the beaches',
+          title: '',
+          text: '',
           date: new Date(Date.now()).toLocaleString()
         }
       ]
